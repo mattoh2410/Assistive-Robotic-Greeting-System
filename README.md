@@ -1,5 +1,5 @@
 # Robotic Assisted Greeting System
-Project Matthew O'Hara
+Matthew O'Hara
 
 
 
