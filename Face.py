@@ -16,7 +16,6 @@ class Face:
         self.r.move_lift(-3)
         self.r.set_head_angle(cozmo.robot.MAX_HEAD_ANGLE).wait_for_completed()
         try:
-            print("1")
             self.r.world.wait_for_observed_face(timeout=30)
         except asyncio.TimeoutError:
             "exit"
