@@ -11,7 +11,6 @@ class Weather:
         self.outfit = None
         self.number = None
 
-    city = "Edinburgh,GB"
 
     def set_outfit(self, ):
         print("1")
