@@ -50,11 +50,6 @@ class Welcome:
         self.robot.say_text(m+ name+ "the current time is"+ self.hour+ self.min).wait_for_completed()
         self.robot.say_text("the date is "+ self.day+ "the"+ self.day_no+
                             "of"+ self.month).wait_for_completed()
-        ''''self.robot.say_text("in", city, "the weather will be", w.get_detailed_status(), "with temperatures around",
-                            w.get_temperature('celsius')['temp'], "celsius").wait_for_completed()
-        self.robot.say_text("Based on the current temperature, I think you should wear your", outfit,
-                            "Press Enter of you want me to collect them for you, or type exit to exit").wait_for_completed()'''
-
         print(m, name, "the current time is", self.hour, self.min)
         print("the date is ", self.day, "the", self.day_no,
               "of", self.month)
