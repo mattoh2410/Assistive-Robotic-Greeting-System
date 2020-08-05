@@ -8,7 +8,6 @@ from Projects.Hello.Lights import Lights
 import cozmo
 import asyncio
 
-"class to deal with all the speech"
 
 
 class Welcome:
