@@ -13,7 +13,6 @@ class Face:
         self.city = None
 
     def find_person(self, ):
-        self.r.move_lift(-3)
         self.r.set_head_angle(cozmo.robot.MAX_HEAD_ANGLE).wait_for_completed()
         try:
             self.r.world.wait_for_observed_face(timeout=30)
