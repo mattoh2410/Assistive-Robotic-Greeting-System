@@ -74,7 +74,7 @@ def cozmo_program(robot: cozmo.robot.Robot):
         print("hello")
         l = Lights()
         l.set_lights(d, weather.number)
-        d.find(3)
+        d.find(weather.number)
 
 
 cozmo.run_program(cozmo_program, use_viewer=True, force_viewer_on_top=False)
