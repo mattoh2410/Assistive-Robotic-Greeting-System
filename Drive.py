@@ -37,7 +37,7 @@ class Drive:
                 if i == self.shorts:
                     action = self.robot.pickup_object(self.shorts, num_retries=3)
                     action.wait_for_completed()
-                    self.robot.go_to_pose(Pose(-9.3, -173, 0, angle_z=degrees(180)),
+                    self.robot.go_to_pose(Pose(0, 0, 0, angle_z=degrees(180)),
                                           relative_to_robot=False).wait_for_completed()
                     self.robot.say_text("here are your shorts").wait_for_completed()
                     action = self.robot.place_object_on_ground_here(i)
@@ -48,7 +48,7 @@ class Drive:
                 if i == self.shorts:
                     action = self.robot.pickup_object(self.shorts, num_retries=3)
                     action.wait_for_completed()
-                    self.robot.go_to_pose(Pose(-9.3, -173, 0, angle_z=degrees(180)),
+                    self.robot.go_to_pose(Pose(0, 0, 0, angle_z=degrees(180)),
                                           relative_to_robot=False).wait_for_completed()
                     self.robot.say_text("here are your shorts").wait_for_completed()
                     action = self.robot.place_object_on_ground_here(i)
@@ -62,7 +62,7 @@ class Drive:
                 if i == self.sun_glasses:
                     action = self.robot.pickup_object(self.sun_glasses, num_retries=3)
                     action.wait_for_completed()
-                    self.robot.go_to_pose(Pose(0, 0, 0, angle_z=degrees(180)),
+                    self.robot.go_to_pose(Pose(-9.3, -173, 0, angle_z=degrees(180)),
                                           relative_to_robot=False).wait_for_completed()
                     self.robot.say_text("here are your sun glasses").wait_for_completed()
                     action = self.robot.place_object_on_ground_here(i)
