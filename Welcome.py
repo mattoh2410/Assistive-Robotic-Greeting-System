@@ -51,8 +51,7 @@ class Welcome:
         self.robot.say_text("Your outfit will be displayed on the printout message")
         self.robot.say_text("Press Enter of you want me to collect them for you, or type exit to exit")
         print(m, name, "the current time is", self.hour, self.min)
-        print("the date is ", self.day, "the", self.day_no,
-              "of", self.month)
+        print("the date is ", self.day, "the", self.day_no, "of", self.month)
         print("in", city, "the weather will be", w.get_detailed_status(), "with temperatures around",
               w.get_temperature('celsius')['temp'], "celsius")
         print("Based on the current temperature, I think you should wear your", outfit,
@@ -71,7 +70,6 @@ def cozmo_program(robot: cozmo.robot.Robot):
     if e == "exit":
         robot.say_text("Goodbye")
     else:
-        print("hello")
         l = Lights()
         l.set_lights(d, weather.number)
         d.find(weather.number)
