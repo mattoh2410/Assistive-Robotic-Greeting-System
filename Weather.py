@@ -14,7 +14,7 @@ class Weather:
 
     def set_outfit(self, ):
         print(self.w.get_temperature('celsius')['temp'])
-        if self.w.get_temperature('celsius')['temp'] <= 8:
+        if self.w.get_temperature('celsius')['temp'] <= 10:
             self.outfit = "Jacket"
             self.number = 1
         elif 11 < (self.w.get_temperature('celsius')['temp']) < 14:
