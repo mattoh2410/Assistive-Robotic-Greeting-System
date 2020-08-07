@@ -1,13 +1,12 @@
 import datetime
 import sys
 
-from Projects.Hello.Drive import Drive
-from Projects.Hello.Weather import Weather
-from Projects.Hello.Face import Face
-from Projects.Hello.Lights import Lights
+from Drive import Drive
+from Weather import Weather
+from Face import Face
+from Lights import Lights
 import cozmo
 import asyncio
-
 
 
 class Welcome:
@@ -45,10 +44,12 @@ class Welcome:
         else:
             m = "Good Afternoon"
 
-        self.robot.say_text("Hello"+m).wait_for_completed()
-        self.robot.say_text(m+ name+ "the current time is"+ self.hour+ self.min).wait_for_completed()
-        self.robot.say_text("the date is "+ self.day+ "the"+ self.day_no+
-                            "of"+ self.month).wait_for_completed()
+        self.robot.say_text("Hello" + m).wait_for_completed()
+        self.robot.say_text(m + name + "the current time is" + self.hour + self.min).wait_for_completed()
+        self.robot.say_text("the date is " + self.day + "the" + self.day_no +
+                            "of" + self.month).wait_for_completed()
+        self.robot.say_text("Your outfit will be displayed on the printout message")
+        self.robot.say_text("Press Enter of you want me to collect them for you, or type exit to exit")
         print(m, name, "the current time is", self.hour, self.min)
         print("the date is ", self.day, "the", self.day_no,
               "of", self.month)
@@ -77,3 +78,4 @@ def cozmo_program(robot: cozmo.robot.Robot):
 
 
 cozmo.run_program(cozmo_program, use_viewer=True, force_viewer_on_top=False)
+
